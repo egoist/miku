@@ -59,9 +59,9 @@ Note: to use non-built-in features, please install its loader first, for example
 
 ```bash
 # for sass
-yarn add node-sass sass-loader
+yarn add node-sass sass-loader --dev
 # for vue
-yarn add vue vue-loader vue-template-compiler
+yarn add vue vue-loader vue-template-compiler --dev
 ```
 
 ## How does it work
