@@ -38,16 +38,25 @@ Finally, you can run `yarn try` to see how your code works in action.
 
 ## What languages and preprocessors it supports
 
-- JavaScript(plus ES2015+)
+- **JavaScript/ES2015+** (built-in)
+- JSX (built-in)
 - TypeScript
 - CoffeeScript
 - PostCSS with [cssbag](https://github.com/egoist/cssbag)
 - Stylus
 - SASS/SCSS
 - Less
-- JSX
 - [Vue](https://github.com/vuejs/vue-loader)
 - [Svelte](https://github.com/sveltejs/svelte-loader)
+
+Note: to use non-built-in features, please install its loader first, for example:
+
+```bash
+# for sass
+yarn add node-sass sass-loader
+# for vue
+yarn add vue vue-loader
+```
 
 ## How does it work
 
