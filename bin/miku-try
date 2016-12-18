@@ -9,6 +9,7 @@ const {input, flags} = meow(`
   ${chalk.bold('Example:')}
     $ miku                       ${chalk.dim('# get all *.opai.js|css|html files')}
     $ miku example.js style.css  ${chalk.dim('# custom file')}
+    $ miku *.js *.css            ${chalk.dim('# glob patterns')}
 
   ${chalk.bold('Options:')}
     ${chalk.yellow('--port, -p')}            ${chalk.dim('Server port')}

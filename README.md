@@ -66,6 +66,26 @@ yarn add vue vue-loader
 
 Every input file will be processed by miku using webpack, and we also use an `index.html` to load them, you can also pass in an HTML file to override this file, eg: `miku example.js example.html`
 
+## Advanced usage
+
+All cli options can be kept in a global config file: `~/.miku/config.js`, for example:
+
+```js
+module.exports = {
+  port: 6000
+}
+```
+
+You can also provide your own webpack config, we use [webpack-merge](https://github.com/survivejs/webpack-merge) to merge it into default webpack config, put it at `~/.miku/webpack.config.js`:
+
+```js
+module.exports = {
+  module: {
+    rules: [/* add more loaders */]
+  }
+}
+```
+
 ## Use cases
 
 - you have some js code to demo: `miku example.js`
