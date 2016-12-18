@@ -57,6 +57,7 @@
     "globby": "^6.1.0",
     "graceful-copy": "^1.1.0",
     "html-webpack-plugin": "^2.24.1",
+    "installed-by-yarn-globally": "^0.1.1",
     "meow": "^3.7.0",
     "ora": "^0.3.0",
     "postcss-loader": "^1.2.1",
