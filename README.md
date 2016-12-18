@@ -6,6 +6,8 @@ A general-purpose JS/CSS/HTML prototype tool.
 
 Like jsbin/jsfiddle/codepen but lies on your file system, with more powerful preprocessors support and your favorite editor is your playground!
 
+[中文介绍](https://egoistian.com/2016/12/18/miku/)
+
 ## How to use
 
 Install it:
