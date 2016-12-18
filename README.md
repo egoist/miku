@@ -13,7 +13,7 @@ Install it:
 ```bash
 yarn add miku --dev
 # optionally you can install it globally
-# but it's recommend to install locally
+# but recommend to install locally
 ```
 
 Add npm scripts:
