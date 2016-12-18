@@ -36,6 +36,8 @@ setInterval(() => {
 
 Finally, you can run `yarn try` to see how your code works in action.
 
+Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help.
+
 ## What languages and preprocessors it supports
 
 - **JavaScript/ES2015+** (built-in)

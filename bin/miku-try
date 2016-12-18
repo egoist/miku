@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import meow from 'meow'
 import chalk from 'chalk'
-import main from '../lib'
+import handleError from '../lib/handle-error'
 
 const {input, flags} = meow(`
   Usage: ${chalk.yellow('miku [files]')}
@@ -11,7 +11,12 @@ const {input, flags} = meow(`
     $ miku example.js style.css  ${chalk.dim('# custom file')}
 
   ${chalk.bold('Options:')}
-    --pragma          Specific JSX pragma, default is React.createElement
+    ${chalk.yellow('--port, -p')}            ${chalk.dim('Server port')}
+    ${chalk.yellow('--pragma')}              ${chalk.dim('Specific JSX pragma, default is React.createElement')}
+
+  ${chalk.bold('Commands:')}
+    ${chalk.yellow('*')}            ${chalk.dim('Run miku')}
+    ${chalk.yellow('init')}         ${chalk.dim('Initialize an empty project for miku use')}
 `, {
   alias: {
     h: 'help',
@@ -19,11 +24,4 @@ const {input, flags} = meow(`
   }
 })
 
-main(input, flags).catch(err => {
-  if (err.name === 'MikuError') {
-    console.log(chalk.red(`\n  > ${err.message}\n`))
-  } else {
-    console.log(chalk.red(err.stack))
-  }
-  process.exit(1)
-})
+require('main').default(input, flags).catch(handleError)

@@ -55,6 +55,7 @@
     "cssbag": "^0.1.0",
     "express": "^4.14.0",
     "globby": "^6.1.0",
+    "graceful-copy": "^1.1.0",
     "html-webpack-plugin": "^2.24.1",
     "meow": "^3.7.0",
     "ora": "^0.3.0",

@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+import meow from 'meow'
+import chalk from 'chalk'
+import init from '../lib/init'
+import handleError from '../lib/handle-error'
+
+const {input, flags} = meow({
+  description: false,
+  help: `
+    Initialize an empty project for miku use.
+
+    ${chalk.bold('Examples:')}
+      $ miku init foo
+      $ miku init my-demo
+
+    ${chalk.bold('Options:')}
+      ${chalk.yellow('--force, -f')}           ${chalk.dim('Override if target folder exists')}
+      ${chalk.yellow('--help, -h')}            ${chalk.dim('Show help')}
+  `
+}, {
+  alias: {
+    h: 'help',
+    v: 'version'
+  }
+})
+
+init(input[0], flags).catch(handleError)
