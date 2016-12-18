@@ -44,9 +44,9 @@ Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help
 
 - **JavaScript/ES2015+** (built-in)
 - JSX (built-in)
+- PostCSS with [cssbag](https://github.com/egoist/cssbag) (built-in)
 - TypeScript
 - CoffeeScript
-- PostCSS with [cssbag](https://github.com/egoist/cssbag)
 - Stylus
 - SASS/SCSS
 - Less
@@ -59,7 +59,7 @@ Note: to use non-built-in features, please install its loader first, for example
 # for sass
 yarn add node-sass sass-loader
 # for vue
-yarn add vue vue-loader
+yarn add vue vue-loader vue-template-compiler
 ```
 
 ## How does it work
@@ -68,7 +68,7 @@ Every input file will be processed by miku using webpack, and we also use an `in
 
 ## Advanced usage
 
-All cli options can be kept in a global config file: `~/.miku/config.js`, for example:
+All **cli options** can be kept in a global config file: `~/.miku/config.js`, for example:
 
 ```js
 module.exports = {
@@ -76,7 +76,9 @@ module.exports = {
 }
 ```
 
-You can also provide your own webpack config, we use [webpack-merge](https://github.com/survivejs/webpack-merge) to merge it into default webpack config, put it at `~/.miku/webpack.config.js`:
+If an option shows in both global config and cli options, the latter would have higher priority.
+
+You can also provide your own **webpack config**, we use [webpack-merge](https://github.com/survivejs/webpack-merge) to merge it into default webpack config, put it at `~/.miku/webpack.config.js`:
 
 ```js
 module.exports = {
