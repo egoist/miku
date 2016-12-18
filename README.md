@@ -48,6 +48,7 @@ Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help
 - TypeScript
 - CoffeeScript
 - LiveScript
+- Pug/Jade
 - Stylus
 - SASS/SCSS
 - Less
