@@ -66,6 +66,12 @@ yarn add vue vue-loader
 
 Every input file will be processed by miku using webpack, and we also use an `index.html` to load them, you can also pass in an HTML file to override this file, eg: `miku example.js example.html`
 
+## Use cases
+
+- you have some js code to demo: `miku example.js`
+- you have some css and html code to demo: `miku example.css example.html`
+- you need preprocessors: `miku example.coffee`
+
 ## Contributing
 
 1. Fork it!
