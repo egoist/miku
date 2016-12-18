@@ -11,7 +11,7 @@ Like jsbin/jsfiddle/codepen but lies on your file system, with more powerful pre
 Install it:
 
 ```bash
-$ yarn add miku --dev
+yarn add miku --dev
 # optionally you can install it globally
 # but it's recommend to install locally
 ```
