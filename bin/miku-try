@@ -24,4 +24,4 @@ const {input, flags} = meow(`
   }
 })
 
-require('main').default(input, flags).catch(handleError)
+require('../lib').default(input, flags).catch(handleError)
