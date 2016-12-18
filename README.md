@@ -45,6 +45,7 @@ Finally, you can run `yarn try` to see how your code works in action.
 - Stylus
 - SASS/SCSS
 - Less
+- JSX
 - [Vue](https://github.com/vuejs/vue-loader)
 - [Svelte](https://github.com/sveltejs/svelte-loader)
 
