@@ -47,6 +47,7 @@ Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help
 - PostCSS with [cssbag](https://github.com/egoist/cssbag) (built-in)
 - TypeScript
 - CoffeeScript
+- LiveScript
 - Stylus
 - SASS/SCSS
 - Less
