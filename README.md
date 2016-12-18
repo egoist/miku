@@ -36,6 +36,8 @@ setInterval(() => {
 
 Finally, you can run `yarn try` to see how your code works in action.
 
+You can also run `miku init my-demo` to created an empty project in seconds.
+
 Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help.
 
 ## What languages and preprocessors it supports
