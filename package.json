@@ -1,0 +1,66 @@
+{
+  "name": "miku",
+  "version": "0.0.0",
+  "description": "A general-purpose JS/CSS/HTML prototype tool.",
+  "license": "MIT",
+  "repository": "egoist/miku",
+  "author": {
+    "name": "EGOIST",
+    "email": "0x142857@gmail.com",
+    "url": "github.com/egoist"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "eslint bin/* lib/*.js",
+    "try": "miku example/*"
+  },
+  "files": [
+    "dist",
+    "static"
+  ],
+  "bin": "dist/bin/miku",
+  "keywords": [
+    "build",
+    "prototype"
+  ],
+  "devDependencies": {
+    "babel-preset-env": "^1.1.4",
+    "eslint": "latest",
+    "eslint-config-rem": "latest",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-chmod": "^2.0.0",
+    "gulp-named": "^1.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "extends": "rem/esnext"
+  },
+  "dependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-runtime": "^6.20.0",
+    "chalk": "^1.1.3",
+    "cross-spawn": "^5.0.1",
+    "css-loader": "^0.26.1",
+    "cssbag": "^0.1.0",
+    "express": "^4.14.0",
+    "globby": "^6.1.0",
+    "html-webpack-plugin": "^2.24.1",
+    "meow": "^3.7.0",
+    "ora": "^0.3.0",
+    "postcss-loader": "^1.2.1",
+    "style-loader": "^0.13.1",
+    "update-notifier": "^1.0.3",
+    "webpack": "2.1.0-beta.27",
+    "webpack-dev-middleware": "^1.9.0",
+    "webpack-hot-middleware": "^2.13.2"
+  }
+}
