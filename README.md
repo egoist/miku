@@ -12,7 +12,7 @@ Install it:
 
 ```bash
 $ yarn add miku --dev
-# optionally you can install it globbaly
+# optionally you can install it globally
 # but it's recommend to install locally
 ```
 
