@@ -41,7 +41,7 @@ Finally, you can run `yarn try` to see how your code works in action.
 - JavaScript(plus ES2015+)
 - TypeScript
 - CoffeeScript
-- PostCSS
+- PostCSS with [cssbag](https://github.com/egoist/cssbag)
 - Stylus
 - SASS/SCSS
 - Less
