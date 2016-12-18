@@ -40,6 +40,10 @@ You can also run `miku init my-demo` to create an empty project in seconds.
 
 Run `./node_modules/.bin/miku -h` or `miku -h` if installed globally to get help.
 
+## How does it work
+
+Every input file will be processed by miku using webpack, and we also use an `index.html` to load them, you can also pass in an HTML file to override this file, eg: `miku example.js example.html`
+
 ## What languages and preprocessors it supports
 
 - **JavaScript/ES2015+** (built-in)
@@ -64,9 +68,11 @@ yarn add node-sass sass-loader --dev
 yarn add vue vue-loader vue-template-compiler --dev
 ```
 
-## How does it work
+## Static file support
 
-Every input file will be processed by miku using webpack, and we also use an `index.html` to load them, you can also pass in an HTML file to override this file, eg: `miku example.js example.html`
+You can import images and fonts directly, and it will return the path to the file which you can use.
+
+Note that for `.svg` file it will return its raw content, since we're more likely to use **Inline SVG**.
 
 ## Advanced usage
 
