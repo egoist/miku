@@ -1,6 +1,6 @@
 {
   "name": "miku",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A general-purpose JS/CSS/HTML prototype tool.",
   "license": "MIT",
   "repository": "egoist/miku",
