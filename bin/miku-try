@@ -9,6 +9,9 @@ const {input, flags} = meow(`
   ${chalk.bold('Example:')}
     $ miku                       ${chalk.dim('# get all *.opai.js|css|html files')}
     $ miku example.js style.css  ${chalk.dim('# custom file')}
+
+  ${chalk.bold('Options:')}
+    --pragma          Specific JSX pragma, default is React.createElement
 `, {
   alias: {
     h: 'help',
