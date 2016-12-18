@@ -13,8 +13,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "eslint bin/* lib/*.js",
-    "try": "miku example/*"
+    "test": "eslint bin/* lib/*.js && npm run build",
+    "try": "miku example/*",
+    "build": "gulp build"
   },
   "files": [
     "dist",
