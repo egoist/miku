@@ -70,6 +70,17 @@ yarn add node-sass sass-loader --dev
 yarn add vue vue-loader vue-template-compiler --dev
 ```
 
+### Babel
+
+We have babel presets and plugins included:
+
+- babel-preset-es2015
+- babel-preset-stage-2
+- babel-plugin-transform-runtime
+- babel-runtime
+
+However you can use `.babelrc` to override it.
+
 ## Static file support
 
 You can import images and fonts directly, and it will return the path to the file which you can use.
