@@ -113,6 +113,10 @@ module.exports = {
 }
 ```
 
+## Tips
+
+- You'd better put `.miku/dist` in `.gitignore` file
+
 ## Use cases
 
 - you have some js code to demo: `miku example.js`
