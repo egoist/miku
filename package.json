@@ -65,7 +65,6 @@
     "raw-loader": "^0.5.1",
     "style-loader": "^0.13.1",
     "update-notifier": "^1.0.3",
-    "user-home": "^2.0.0",
     "webpack": "2.2.0-rc.2",
     "webpack-dev-middleware": "^1.9.0",
     "webpack-hot-middleware": "^2.13.2",
