@@ -12,8 +12,9 @@ const {input, flags} = meow(`
     $ miku *.js *.css            ${chalk.dim('# glob patterns')}
 
   ${chalk.bold('Options:')}
-    ${chalk.yellow('--port, -p')}            ${chalk.dim('Server port')}
+    ${chalk.yellow('--port')}                ${chalk.dim('Server port')}
     ${chalk.yellow('--pragma')}              ${chalk.dim('Specific JSX pragma, default is React.createElement')}
+    ${chalk.yellow('--production, --prod')}  ${chalk.dim('Build in production mode')}
 
   ${chalk.bold('Commands:')}
     ${chalk.yellow('*')}            ${chalk.dim('Run miku')}
@@ -21,7 +22,8 @@ const {input, flags} = meow(`
 `, {
   alias: {
     h: 'help',
-    v: 'version'
+    v: 'version',
+    prod: 'production'
   }
 })
 

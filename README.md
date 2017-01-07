@@ -87,6 +87,10 @@ You can import images and fonts directly, and it will return the path to the fil
 
 Note that for `.svg` file it will return its raw content, since we're more likely to use **Inline SVG**.
 
+## Production mode
+
+Sometimes you need to distribute your work for others to visit, then just use `--prod` or `--production` to do this.
+
 ## Advanced usage
 
 All **cli options** can be kept in a local config file in project folder: `.miku/config.js`, for example:
