@@ -89,7 +89,7 @@ Note that for `.svg` file it will return its raw content, since we're more likel
 
 ## Advanced usage
 
-All **cli options** can be kept in a global config file: `~/.miku/config.js`, for example:
+All **cli options** can be kept in a local config file in project folder: `.miku/config.js`, for example:
 
 ```js
 module.exports = {
@@ -97,9 +97,9 @@ module.exports = {
 }
 ```
 
-If an option shows in both global config and cli options, the latter would have higher priority.
+If an option shows in both local config and cli options, the latter would have higher priority.
 
-You can also provide your own **webpack config**, we use [webpack-merge](https://github.com/survivejs/webpack-merge) to merge it into default webpack config, put it at `~/.miku/webpack.config.js`:
+You can also provide your own **webpack config**, we use [webpack-merge](https://github.com/survivejs/webpack-merge) to merge it into default webpack config, put it at `.miku/webpack.config.js`:
 
 ```js
 module.exports = {
